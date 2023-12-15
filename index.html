@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
+  </head>
+  <body>
+    <div id="app">
+        <style>
+            :root {
+                --bg-color: #fff;
+                --fg-color: #005b9c;
+            }
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --bg-color: #000;
+                    --fg-color: #dff0fc;
+                }
+            }
+            body {
+                padding: 35vh 0 0;
+                background: var(--bg-color);
+                text-align: center;
+            }
+            path {
+                fill: var(--fg-color);
+                animation: fade 0.8s steps(8) infinite;
+            }
+            @keyframes fade {
+                to {
+                    opacity: 0;
+                }
+            }
+        </style>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
