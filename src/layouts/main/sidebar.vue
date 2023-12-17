@@ -33,13 +33,11 @@ const matchExpanded = (items) => {
     if (item.children != null) {
       matchExpanded(item.children) && expandedKeys.value.push(item.id)
     }
-    console.log(routeMatched(item))
     if (routeMatched(item)) {
       currentKey.value = item.id
       matched = true
     }
   }
-  console.log('Matched: ' + matched)
   return matched
 }
 

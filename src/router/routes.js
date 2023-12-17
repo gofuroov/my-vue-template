@@ -4,6 +4,7 @@ const routes = [
         name: 'home',
         component: () => import('@/views/home.vue'),
         meta: {
+            title: "Bosh sahifa",
             requiresAuth: false,
             layout: 'main'
         }
@@ -13,6 +14,7 @@ const routes = [
         name: 'page1',
         component: () => import('@/views/test/page1.vue'),
         meta: {
+            title: "Page1",
             requiresAuth: false,
             layout: 'main'
         }
